@@ -17,7 +17,7 @@
 .flexslider a:focus  {outline: none;}
 .slides,
 .flex-control-nav,
-.flex-direction-nav {margin: 0; padding: 0; list-style: none;float: left;} 
+.flex-direction-nav {margin: 0; padding: 0; list-style: none; } 
 
 /* FlexSlider Necessary Styles
 *********************************/ 
@@ -43,17 +43,18 @@ html[xmlns] .slides {display: block;}
 .flex-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
 .loading .flex-viewport {max-height: 300px;}
 .flexslider .slides {zoom: 1;}
-
-.carousel li {margin-right: 5px}
+.carousel li {margin-right: 5px;float:left;}
 
 
 /* Direction Nav */
 .flex-direction-nav {*height: 0;}
-.flex-direction-nav a {width: 30px; height: 30px; margin: -20px 0 0; display: block;  cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}
+.flex-direction-nav a {width: 30px;position: absolute; height: 30px; margin: -20px 0 0; display: block;  cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}
 .flex-direction-nav .flex-next {background-position: 100% 0; right: 0px;}
-.flex-direction-nav .flex-prev {left: 0px;}
+.flex-direction-nav .flex-prev {float: left;}
 .flexslider:hover .flex-next {opacity: 0.8; left: 0; background: url(images/left.png) no-repeat 0 0; position: absolute; top: 50%; z-index: 10;}
 .flexslider:hover .flex-prev {opacity: 0.8; left: 97%;  background: url(images/right.png) no-repeat 0 0; position: absolute; top: 50%; z-index: 10;}
+
+
 
 /* Control Nav */
 .flex-control-nav {width: 100%; position: absolute; bottom: -40px; text-align: center;}
